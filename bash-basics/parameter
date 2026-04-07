@@ -1,0 +1,10 @@
+#!/bin/bash
+
+filename=$(echo "document.txt" | sed 's/.txt//')
+echo $filename
+
+filename="document.txt"
+echo ${filename%.txt}
+
+var=${file:?"little error"}
+echo $var

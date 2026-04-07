@@ -1,0 +1,8 @@
+#!/bin/bash
+#
+# Demo bash default parameters
+
+# Use default value for a variable if unset or empty :-
+name="${1:-world}"
+log_level="${LOG_LEVEL:-info}"
+echo "Hello ${name} (log: ${log_level})"

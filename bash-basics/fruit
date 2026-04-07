@@ -1,0 +1,27 @@
+#!/bin/bash
+
+
+
+# Takes one argument
+
+if [[ $# -ne 1 ]]; then
+  echo "Usage $0 <fruit>" >&2
+  exit 1
+fi
+
+case $1 in
+  apple)
+    color="red"
+    ;;
+  banana)
+    color="yellow"
+    ;;
+  kiwi)
+    color="green"
+    ;;
+  *)
+    echo "Unknown fruit" >&2
+    exit 1
+esac
+
+echo "$1 is $color"

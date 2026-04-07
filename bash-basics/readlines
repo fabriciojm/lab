@@ -1,0 +1,5 @@
+#!/bin/bash
+
+while IFS=: read -r user _ uid gid _ home shell; do
+  echo "$user (UID $uid and GID $gid)has home directory $home and uses $shell shell"
+done < /etc/passwd
