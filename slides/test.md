@@ -31,6 +31,6 @@ Test this preprocessed graph
 
 ```
 ~~~graph-easy --as=boxart
-echo "[ A ] - to -> [ B ]" 
+[ A ] - to -> [ B ]
 ~~~
 ```
