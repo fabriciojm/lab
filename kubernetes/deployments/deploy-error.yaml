@@ -17,5 +17,10 @@ spec:
       containers:
         - image: httpd:alpine3.18
           name: httpd
+          command: ["/bin/bash", "-c"]
+          args: ["sleep5; exit 1"] # Exit in an error
   strategy:
-    type: Recreate
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 1
+      maxSurge: 1
