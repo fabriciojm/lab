@@ -1,4 +1,10 @@
-# This is a title
+---
+theme: ./path/to/theme.json
+author: Fabricio Jiménez Morales
+date: YYYY-MM-DD
+paging: Slide %d / %d
+---
+# This is the first title
 
 This is normal text
 
