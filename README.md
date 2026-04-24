@@ -4,4 +4,5 @@ I work ~daily with code. Here I put some code snippets, ideas, and experimets al
 
 - [Bash Basics](bash-basics/): Review of basic bash commands, scripting, etc.
 - [Containers](containers/): Docker Containers, Images, Docker Compose, Best practices, Volumes, Multi-stage Build.
-- [Kubernetes](kubernetes/): Kubernetes basics.
+- [Kubernetes](kubernetes/): Kubernetes basics: Pods, Deployments, Namespaces, Services.
+- [Slides](slide/): Sample slides for presenting in the terminal.
