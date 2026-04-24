@@ -9,3 +9,5 @@ kubectl apply -f frontend.yaml
 kubectl expose frontend
 kubectl get service -o wide
 ```
+
+(Although in practice this is often done by code.)
