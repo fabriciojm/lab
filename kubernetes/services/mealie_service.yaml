@@ -1,0 +1,36 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: "2026-04-29T14:51:52Z"
+  finalizers:
+  - service.kubernetes.io/load-balancer-cleanup
+  labels:
+    app: mealie
+  name: mealie
+  namespace: mealie
+  resourceVersion: "33354"
+  uid: 3589321e-f8c2-4da8-9cf9-6b69c026cf60
+spec:
+  allocateLoadBalancerNodePorts: true
+  clusterIP: 10.43.83.194
+  clusterIPs:
+  - 10.43.83.194
+  externalTrafficPolicy: Cluster
+  internalTrafficPolicy: Cluster
+  ipFamilies:
+  - IPv4
+  ipFamilyPolicy: SingleStack
+  ports:
+  - nodePort: 32309
+    port: 9000
+    protocol: TCP
+    targetPort: 9000
+  selector:
+    app: mealie
+  sessionAffinity: None
+  type: LoadBalancer
+status:
+  loadBalancer:
+    ingress:
+    - ip: 192.168.1.101
+      ipMode: VIP
