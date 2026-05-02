@@ -13,7 +13,7 @@ spec:
     - image: busybox
       name: busybox
       command: ["/bin/sh", "-c"]
-      arg: ["sleep 1000"]
+      args: ["sleep 1000"]
       volumeMounts:
         - mountPath: /scratch
           name: scratch-volume
