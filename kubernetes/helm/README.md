@@ -48,7 +48,9 @@ Add a little script `homepage-upgrade`
 #!/bin/bash
 # One liner to use envsubst to process secrets
 # Usage: homepage-upgrade values.yaml
-export "$(grep -v '^#' ../../.env | xargs)"
+set -a
+source ../../.env
+set +a
 envsubst < "$1" | helm upgrade my-release jameswynn/homepage -n monitoring -f -
 ```
 
