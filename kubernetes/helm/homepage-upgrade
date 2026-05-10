@@ -1,0 +1,4 @@
+#!/bin/bash
+# One liner to use envsubst to process secrets
+export "$(grep -v '^#' ../../.env | xargs)"
+envsubst < "$1" | helm upgrade my-release jameswynn/homepage -n monitoring -f -
