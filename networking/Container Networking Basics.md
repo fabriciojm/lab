@@ -63,4 +63,4 @@ docker network inspect bridge
 This shows a JSON output, look for IPAM (IP Address Manager) that contains the subnet and gateway definitions.
 Also shows containers namespaces with their respective names and their respective IPs
 
-Continues in [[0-inbox/Container Networking by Hand]]
+Continues in [[Container Networking by Hand.md]]
