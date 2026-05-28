@@ -1,0 +1,20 @@
+# Lesson 1: Mixed topology lab
+# One router running srl and one alpine linux host
+
+name: mixed-topology-lab
+
+topology:
+  nodes:
+    # Router running SRL
+    router:
+      kind: srl
+      image: ghcr.io/nokia/srlinux:24.10.1
+
+    # Alpine Linux host
+    host1:
+      kind: linux
+      image: alpine:3.20
+
+  links:
+    # Connect router's e1-1 to host1's eth-1
+    - endpoints: ["router:e1-1", "host1:eth1"]

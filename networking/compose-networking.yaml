@@ -1,0 +1,13 @@
+# Simple: two containers in the same network
+# Can do e.g. `docker compose exec client ping -c 2 web`
+services:
+  web:
+    image: nginx:1.27-alpine
+    networks:
+      - default
+
+  client:
+    image: alpine:3.20
+    command: sleep 3600
+    networks:
+      - default
