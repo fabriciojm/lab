@@ -3,4 +3,4 @@
 set -a
 source ../../.env
 set +a
-envsubst < "$1" | helm upgrade my-release jameswynn/homepage -n monitoring -f -
+envsubst < "$1" | helm upgrade my-homepage jameswynn/homepage -n monitoring -f -
