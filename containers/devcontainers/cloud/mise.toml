@@ -1,0 +1,12 @@
+[tools]
+python = "latest"
+pipx = "latest"
+azure-cli = "latest"
+terraform = "latest"
+kubectl = "latest"
+
+[tasks.setup]
+run = "./scripts/setup.sh"
+
+[tasks.azure-login]
+run = "./scripts/azure-login.sh"

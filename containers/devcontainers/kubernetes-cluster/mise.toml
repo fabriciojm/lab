@@ -1,0 +1,8 @@
+[tools]
+helm = "latest"
+kubectl = "latest"
+sops = "latest"
+
+[env]
+AGE_PUBLIC = "<your-key>"
+KUBECONFIG = "/workspaces/<cluster-name>/kubeconfig"
